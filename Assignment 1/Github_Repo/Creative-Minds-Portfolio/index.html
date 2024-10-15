@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Web Developer Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MyPortfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>I Build Engaging Web Experiences</h1>
+            <p>Full-Stack Developer | UI/UX Enthusiast</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2 style="text-align: left; padding-left: 25%;">About Me</h2>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with a love for creating interactive web experiences. I specialize in both front-end and back-end development and enjoy working on projects that challenge my skills.</p>
+                </div>
+                <div class="fun-facts">
+                    <h3>Fun Facts</h3>
+                    <ul>
+                        <li>🎮 Avid gamer</li>
+                        <li>🌍 Love traveling and exploring new cultures</li>
+                        <li>📚 Continuous learner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="container">
+            <div class="skills">
+                <div class="skill">
+                    <h4>HTML</h4>
+                    <div class="skill-bar html" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>CSS</h4>
+                    <div class="skill-bar css" style="width: 85%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar javascript" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>Python</h4>
+                    <div class="skill-bar python" style="width: 75%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>MySQL</h4>
+                    <div class="skill-bar mysql" style="width: 70%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>React</h4>
+                    <div class="skill-bar react" style="width: 45%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="container">
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                <p>This project is a personal portfolio website built with HTML, CSS, and JavaScript. It features responsive design and a smooth user experience across devices.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                <p>A weather forecasting app that fetches real-time data from an API. Developed using JavaScript and styled with Bootstrap for a clean UI.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Online Store</h3>
+                <p>An e-commerce web application with a dynamic product catalog, shopping cart, and user authentication. Built using React and Node.js.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Blog Platform</h3>
+                <p>This project is a content management system (CMS) for bloggers. It allows users to create, edit, and delete blog posts. Built with Laravel and MySQL.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog-section">
+        <h2>My Blog</h2>
+        <div class="container">
+            <div class="blog-posts">
+                <div class="blog-card">
+                    <h3>How to Build a Responsive Website</h3>
+                <p class="date">October 1, 2024</p>
+                <p>Learn the fundamental concepts of responsive design, media queries, and how to create a website that works well on all screen sizes.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Top 10 JavaScript Frameworks to Learn in 2024</h3>
+                    <p class="date">September 15, 2024</p>
+                    <p>A breakdown of the most popular and powerful JavaScript frameworks and libraries that every developer should consider learning this year.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Web Accessibility: Designing for All Users</h3>
+                <p class="date">June 10, 2024</p>
+                <p>A guide on making websites accessible to users with disabilities, focusing on best practices for inclusive web design.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or just say hello, feel free to reach out!</p>
+        <div class="container">
+            <form class="contact-form">
+                <input style="width: 400px; height: 40px;" type="text" placeholder="Your Name" required>
+                <input style="width: 400px; height: 40px;" type="email" placeholder="Your Email" required>
+                <textarea style="width: 400px; height: 100px;" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Umar Saleem. All Rights Reserved ©.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

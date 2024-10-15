@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bcdce759; /* Light background */
+}
+
+header {
+    background-color: #cfedf384; /* White background for the header */
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #007bff; /* Blue color for the logo */
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text color for links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.cta-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text for the button */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Previous CSS styles from the header section */
+
+.hero {
+    background-image: url('download.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333; /* Dark text color for readability */
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay for contrast */
+}
+
+.hero-content {
+    position: relative; /* Position relative to allow the overlay effect */
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+.hero h1 {
+    font-size: 48px; /* Large font for the headline */
+    margin-bottom: 15px; /* Space between headline and subheadline */
+}
+
+.hero p {
+    font-size: 20px; /* Medium font for the subheadline */
+    margin-bottom: 20px; /* Space between subheadline and button */
+}
+
+.cta-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text for the button */
+    padding: 15px 30px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.skills-section {
+    background-color: #ffffff; /* Light background for the Blog section */
+    padding: 60px 0; /* Padding for top and bottom */
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 36px; /* Large font for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    color: #333; /* Dark color for contrast */
+}
+
+.skills {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space between skill items */
+    flex-wrap: wrap; /* Wrap skills to the next line if needed */
+    max-width: 1000px; /* Max width for the skills container */
+    margin: auto; /* Centering */
+}
+
+.skill {
+    width: 150px; /* Fixed width for each skill item */
+    margin-bottom: 25px; /* Space below each skill */
+}
+
+.skill h4 {
+    font-size: 20px; /* Medium font for skill names */
+    margin-bottom: 5px; /* Space below skill name */
+    color: #333; /* Dark color for skill names */
+}
+
+.skill-bar {
+    height: 10px; /* Height of the skill bar */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e0e0e0; /* Light grey background */
+}
+
+.html { background-color: #f16529; } /* HTML skill bar */
+.css { background-color: #2965f1; } /* CSS skill bar */
+.javascript { background-color: #f0db4f; } /* JavaScript skill bar */
+.python { background-color: #3572A5; } /* Python skill bar */
+.mysql { background-color: #4479A1; } /* MySQL skill bar */
+.react { background-color: #61dafb; } /* React skill bar */
+
+
+.about {
+    background-color: #fcfcfb;
+    padding: 60px 0; /* Padding for top and bottom */
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 36px; /* Large font for the section title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for contrast */
+}
+
+.about-content {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space between About Me and Fun Facts */
+    max-width: 1000px; /* Max width for the content */
+    margin: auto; /* Centering */
+    margin-bottom: 40px; /* Space below the about content */
+}
+
+.about-text {
+    flex: 1; /* Flex-grow to take available space */
+    margin-right: 20px; /* Space between text and fun facts */
+}
+
+.fun-facts {
+    flex: 1; /* Flex-grow to take available space */
+}
+
+.about p {
+    font-size: 18px; /* Medium font for the description */
+}
+
+.about h3 {
+    font-size: 28px; /* Medium font for subheadings */
+    margin: 20px 0 10px; /* Space around subheadings */
+    text-align: center; /* Center text */
+}
+
+.about ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center items */
+    margin-top: 10px; /* Space above the list */
+}
+
+.about ul li {
+    font-size: 18px; /* Medium font for list items */
+    margin: 5px 0; /* Space between items */
+}
+
+.projects-section {
+    background-color: #f8f9f9; /* Light background for the Projects section */
+    padding: 60px 0; /* Padding for top and bottom */
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 36px; /* Large font for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    color: #333; /* Dark color for contrast */
+}
+
+.projects {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+    justify-content: center; /* Center the cards */
+    max-width: 1200px; /* Max width for the projects container */
+    margin: auto; /* Centering */
+}
+
+.project-card {
+    /* background-image: url(download.jpeg); */
+    background-color: #ffffff; /* White background for the card */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for each card */
+    margin: 15px; /* Margin around each card */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center text in the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project-card h3 {
+    font-size: 24px; /* Font size for project titles */
+    margin-bottom: 15px; /* Space below the title */
+    color: #333; /* Dark color for titles */
+}
+
+.project-card p {
+    font-size: 16px; /* Font size for project description */
+    color: #666; /* Medium grey for description text */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.btn {
+    display: inline-block; /* Block-level button */
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.blog-section {
+    background-color: #cfe7d7; /* Light background for the Blog section */
+    padding: 60px 0; /* Padding for top and bottom */
+}
+
+.blog-section h2 {
+    text-align: center;
+    font-size: 36px; /* Large font for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    color: #333; /* Dark color for contrast */
+}
+
+.blog-posts {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+    justify-content: center; /* Center the cards */
+    max-width: 1200px; /* Max width for the blog posts container */
+    margin: auto; /* Centering */
+}
+
+.blog-card {
+    background-color: #ffffff; /* White background for the card */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for each card */
+    margin: 15px; /* Margin around each card */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center text in the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+}
+
+.blog-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.blog-card h3 {
+    font-size: 24px; /* Font size for blog titles */
+    margin-bottom: 15px; /* Space below the title */
+    color: #333; /* Dark color for titles */
+}
+
+.blog-card .date {
+    font-size: 14px; /* Smaller font for date */
+    color: #999; /* Light grey color for date */
+    margin-bottom: 10px; /* Space below the date */
+}
+
+.blog-card p {
+    font-size: 16px; /* Font size for blog description */
+    color: #666; /* Medium grey for description text */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.btn {
+    display: inline-block; /* Block-level button */
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa; /* Light background for the contact section */
+    padding: 60px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text */
+}
+
+.contact-section h2 {
+    font-size: 36px; /* Large font for the section title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for the title */
+}
+
+.contact-section p {
+    font-size: 16px; /* Font size for the paragraph */
+    color: #666; /* Medium grey for the text */
+    margin-bottom: 40px; /* Space below the paragraph */
+}
+
+.contact-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Vertical stacking of form elements */
+    align-items: center; /* Center-align form elements */
+    max-width: 600px; /* Max width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 15px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below each input */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+}
+
+.contact-form textarea {
+    height: 150px; /* Height for textarea */
+    resize: none; /* Disable resizing of textarea */
+}
+
+.contact-form .btn {
+    display: inline-block; /* Block-level button */
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Space below the text */
+    font-size: 14px; /* Smaller font for footer text */
+}
+
+.footer .social-links {
+    display: flex; /* Flexbox for social links */
+    justify-content: center; /* Center-align social links */
+    gap: 20px; /* Space between links */
+}
+
+.footer .social-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for social links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer .social-links a:hover {
+    color: #007bff; /* Blue color on hover */
+}
